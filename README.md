@@ -1,2 +1,2 @@
 # Natours
-Simple project for practise Sass and CSS skills (from Udemy Course)
+Simple project for practise Sass and CSS skills (Udemy Course)
