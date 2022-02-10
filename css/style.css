@@ -1,3 +1,20 @@
+/*
+
+0 - 600px:       Phone
+600 - 900px:     Tablet portrait
+900 - 1200x:     Tablet landscape
+[1200px - 1800px] is where our normal styles apply
+1800 +:          Big desktop
+
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -8,6 +25,21 @@
 
 html {
   font-size: 62.5%;
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -54,7 +86,7 @@ body {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777;
@@ -176,14 +208,14 @@ body {
   margin-bottom: 8rem;
 }
 .row::after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
-.row [class^='col-'] {
+.row [class^="col-"] {
   float: left;
 }
-.row [class^='col-']:not(:last-child) {
+.row [class^="col-"]:not(:last-child) {
   margin-right: 6rem;
 }
 .row .col-1-of-2 {
@@ -364,7 +396,7 @@ body {
 }
 .navigation__icon::before,
 .navigation__icon::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   transition: all 0.2s;
@@ -506,7 +538,7 @@ body {
 }
 
 .btn::after {
-  content: '';
+  content: "";
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -877,7 +909,7 @@ body {
   top: -0.4rem;
 }
 .form__radio-button::after {
-  content: '';
+  content: "";
   display: block;
   height: 1.3rem;
   width: 1.3rem;
