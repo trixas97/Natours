@@ -1,6 +1,7 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
+  /*font-size: 16px;*/
   line-height: 1.7;
   color: $color-grey-dark;
 }
@@ -8,6 +9,7 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
+
   backface-visibility: hidden;
   margin-bottom: 6rem;
 
@@ -16,14 +18,19 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 3.5rem;
+
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 
     @include respond(phone) {
       letter-spacing: 1rem;
-      font-size: 5rem;
+      font-family: 5rem;
     }
+    /*
+      animation-delay: 3s;
+      animation-iteration-count: 3;
+      */
   }
 
   &--sub {
@@ -52,7 +59,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   transition: all 0.2s;
 
   @include respond(tab-port) {
